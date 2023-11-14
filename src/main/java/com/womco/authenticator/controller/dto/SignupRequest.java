@@ -1,10 +1,12 @@
 package com.womco.authenticator.controller.dto;
 
 import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 
 @Getter
 @ToString
+@Setter
 public class SignupRequest {
     private String firstName;
     private String lastName;

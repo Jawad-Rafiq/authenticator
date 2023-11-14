@@ -19,6 +19,7 @@ import java.util.Collection;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Setter
 @NoArgsConstructor
+@ToString
 public class User implements Serializable, UserDetails {
     private static final long serialVersionUID = 1065687070161272756L;
 
