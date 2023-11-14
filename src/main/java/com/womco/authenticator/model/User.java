@@ -16,7 +16,6 @@ import java.util.Collection;
 @Table(name = "user")
 @DynamicUpdate
 @Getter
-//@Builder
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Setter
 @NoArgsConstructor

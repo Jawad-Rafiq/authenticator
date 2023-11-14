@@ -4,7 +4,6 @@ import com.womco.authenticator.model.User;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
@@ -39,7 +38,6 @@ public class JwtUtil {
 
     public String generateToken(User userDetails) {
         Map<String, Object> claims = new HashMap<>();
-//        claims.put("password",userDetails.getPassword());
         return createToken(claims, userDetails);
     }
 
@@ -48,7 +46,6 @@ public class JwtUtil {
         return Jwts.builder()
                 .setClaims(claims)
                 .setSubject(subject.getUsername())
-//                .claim("password",subject.getPassword())
                 .claim("first_name",subject.getUserFirstName())
                 .claim("last_name", subject.getUserLastName())
                 .setIssuedAt(new Date(System.currentTimeMillis()))

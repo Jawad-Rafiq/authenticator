@@ -8,9 +8,7 @@ import com.womco.authenticator.model.User;
 import com.womco.authenticator.model.repos.PasswordRepo;
 import com.womco.authenticator.model.repos.UserRepo;
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.Pbkdf2PasswordEncoder;
 import org.springframework.stereotype.Service;
 

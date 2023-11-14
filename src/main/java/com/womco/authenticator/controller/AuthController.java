@@ -1,20 +1,12 @@
 package com.womco.authenticator.controller;
 
-import com.womco.authenticator.config.JwtUtil;
 import com.womco.authenticator.controller.dto.LoginRequest;
 import com.womco.authenticator.controller.dto.LoginResponse;
 import com.womco.authenticator.controller.dto.SignupRequest;
 import com.womco.authenticator.controller.dto.SignupResponse;
-import com.womco.authenticator.dao.UserDao;
-import com.womco.authenticator.dto.AuthenticationRequest;
-import com.womco.authenticator.model.User;
 import com.womco.authenticator.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.ResponseEntity;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
